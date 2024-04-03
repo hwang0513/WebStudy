@@ -1,0 +1,168 @@
+/* 메인 */
+.main 
+{
+    display: flex; 
+    flex-wrap: wrap;
+    width : 100%;
+    height:90%;
+}
+.main-slide
+{
+    position:relative;
+    width:100%;
+    height:50%;
+}
+
+.slides{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.slides > img{ 
+    width: 100%;
+    height: 100%;
+}
+
+.slides > img.show { 
+    display: block;
+}
+button{
+    top:0;
+    position: absolute;
+    padding: 20px;
+    color: #000;
+    font-size: 24px;
+    border:none;
+    height: 100%;
+}
+button:hover{
+    background-color: #222;
+    color: #fff;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.prev-btn{
+    left:0;
+}
+.next-btn{
+    right:0;
+}
+.left-content
+{
+    width: 50%;
+    height: 50%;
+    background-color: wheat;
+}
+.main-link
+{
+    padding-top: 50px;
+    width: 50%;
+    height:50%;
+}
+
+.main-link ul{
+    padding: 0;
+    font-size: 18px;
+    overflow: hidden; /* 넘치는 항목 감춤 */
+}
+
+.main-link ul li{
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.main-link ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-link p {
+    margin-top: 10px;
+}
+
+.main-link ul li a span{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+    line-height: 150px;
+}
+
+#quick-icon1
+{
+    background-image: url('../img/slider/cup-1.jpg');
+}
+ 
+#quick-icon2
+{
+    background-image: url('../img/slider/cup-2.jpg');
+}
+
+#quick-icon3
+{
+    background-image: url('../img/slider/cup-3.jpg');
+}
+
+.left-content
+{
+    padding-top: 15px;
+    width:50%;
+    height:50%;
+    border-radius: 10px;
+    background:#fff;
+}
+
+input[type="radio"] {display:none;}
+
+input[type="radio"] + label 
+{
+    display:inline-block;
+    padding:10px 20px;
+    background:#9a7dab;
+    color:#fff;
+    border-radius: 10px;
+    font-size: 14px; cursor:pointer;
+}
+  
+input[type = "radio"]:checked + label 
+{
+    background:#fff;color:#9a7dab;
+    border: 1px solid #9a7dab;
+}
+
+.content-box 
+{
+    margin-top: 10px;
+    padding-top: 25px;
+    display:none;
+    width:100%;
+    height:80%;
+    border-radius:10px;
+    background: #efe6f4;
+    color:#666;
+}
+
+.content-box ul li{
+    font-size: 18px;
+    list-style: disc;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.content-box a{
+    color: black;
+    text-decoration: none;
+}
+
+.content-box a:hover{
+    color: red;
+}
+
+input[id = "tabmenu01"]:checked ~ .content01 {display:block;}
+input[id = "tabmenu02"]:checked ~ .content02 {display:block;}
+input[id = "tabmenu03"]:checked ~ .content03 {display:block;}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 페이지 만들기 7주차</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/mainbody.css">
+</head>
+
+<!-- 1. 전체 영역은 container 
+     2. 헤더, 본문, 푸터
+     3. 헤더 -> 로고, 네비게이션으로 분리
+     4. 본문 -> 이미지 슬라이드쇼, 콘텐츠로 분리 -> 콘텐츠는 탭 메뉴와 퀵 링크로 분리
+     5. 푸터 
+-->
+<body>
+    <!-- 전체영역 -->
+    <div class="container">
+
+        <!-- (1) 헤더 -->
+        <header>
+            <!-- 로고 -->
+            <div class="logo">
+                <h1>UC System</h1>
+            </div>    
+
+            <!-- 메뉴 -->
+            <nav>
+                <ul class="list-wrap">
+                    <li><a href="#">1번 메뉴</a>
+                        <ul class="dropdown">
+                            <li>1-1</li>
+                            <li>1-2</li>
+                            <li>1-3</li>
+                        </ul>
+                    </li>               
+
+                    <li><a href="#">2번 메뉴</a>
+                        <ul class="dropdown">
+                            <li>2-1</li>
+                            <li>2-2</li>
+                            <li>2-3</li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">3번 메뉴</a>
+                        <ul class="dropdown">
+                            <li>3-1</li>
+                            <li>3-2</li>
+                            <li>3-3</li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">4번 메뉴</a>
+                        <ul class="dropdown">
+                            <li>4-1</li>
+                            <li>4-2</li>
+                            <li>4-3</li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">5번 메뉴</a>
+                        <ul class="dropdown">
+                            <li>5-1</li>
+                            <li>5-2</li>
+                            <li>5-3</li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">6번 메뉴</a>
+                        <ul class="dropdown">
+                            <li>6-1</li>
+                            <li>6-2</li>
+                            <li>6-3</li>
+                        </ul>
+                    </li>
+                </ul>                
+            </nav>
+        </header>
+
+        <!-- (2) 본문 -->
+        <div class="main">
+            <!-- 1. 이미지 -->
+            <div class="main-slide">
+                <div class="slides">
+                    <img src="../img/slider/photo-1.jpg" alt="">
+                    <img src="../img/slider/photo-2.jpg" alt="">
+                    <img src="../img/slider/photo-3.jpg" alt="">
+
+                    <button class="prev-btn">&lang;</button>
+                    <button class="next-btn">&lang;</button>
+                </div>
+            </div>
+
+            <div class="left-content">
+                <input type="radio" name="tab" checked id="tabmenu01">
+                <label for="tabmenu01">전체 공지</label>
+                <input type="radio" name="tab" id="tabmenu02">
+                <label for="tabmenu02">자유게시판</label>
+                <input type="radio" name="tab" id="tabmenu03">
+                <label for="tabmenu03">고객센터</label>
+            
+                <!-- 공지사항 탭 1 -->
+                <div class="content-box content01">
+                    <ul>
+                        <li><a link="" href="#">반갑습니다. 공지사항글입니다.</a></li>
+                        <li><a link="" href="#">안녕하세요 환영합니다.</a></li>
+                        <li><a link="" href="#">반갑습니다 반갑습니다.</a></li>
+                        <li><a link="" href="#">반갑습니다. 공지사항글입니다.</a></li>
+                        <li><a link="" href="#">안녕하세요 환영합니다.</a></li>
+                        <li><a link="" href="#">반갑습니다 반갑습니다.</a></li>
+                    </ul>
+                </div>
+
+                <!-- 공지사항 탭 2 -->
+                <div class="content-box content02">
+                    <ul>
+                        <li><a link="" href="#">자유게시판입니다.</a></li>
+                        <li><a link="" href="#">모두 안녕하세요.</a></li>
+                        <li><a link="" href="#">반갑습니다</a></li>
+                        <li><a link="" href="#">자유게시판입니다.</a></li>
+                        <li><a link="" href="#">모두 안녕하세요.</a></li>
+                        <li><a link="" href="#">반갑습니다</a></li>
+                        
+                    </ul>
+                </div>
+
+                <!-- 공지사항 탭 3 -->
+                <div class="content-box content03">
+                    <ul>
+                        <li><a link="" href="#">반갑습니다. 고객센터입니다.</a></li>
+                        <li><a link="" href="#">문의사항안내.</a></li>
+                        <li><a link="" href="#">반갑습니다 고객센터입니다.</a></li>
+                        <li><a link="" href="#">반갑습니다. 고객센터입니다.</a></li>
+                        <li><a link="" href="#">문의사항안내.</a></li>
+                        <li><a link="" href="#">반갑습니다 고객센터입니다.</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2. 퀵 링크 -->
+            <div class="main-link">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span id="quick-icon1"></span>
+                            <p>알록달록 컵</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span id="quick-icon2"></span>
+                            <p>힐링 워크숍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span id="quick-icon3"></span>
+                            <p>문의하기</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- (3) 푸터 -->
+        <footer>
+            <div class="bottomMenu">
+                <ul>
+                    <li><a href="#">회사 소개</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">여행약관</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+<!-- 자바스크립트 연결 -->
+<script src="../js/slide.js"></script>
+</body>
+</html>
