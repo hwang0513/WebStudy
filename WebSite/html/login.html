@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login/login.css">
+</head>
+<body>
+    <div id="bg_gray">
+      <div id="join_pop_up">
+        <label id="quit_join" for="join">X</label>
+        <h2>회원가입</h2>
+        <!-- form -->
+        <form action="">
+          <div class="inputs">
+            <h5>아이디</h5>
+            <label for="id_input">
+              <input
+                type="text"
+                id="id_input"
+                placeholder="아이디를 입력하세요."
+              />
+            </label>
+          </div>
+
+          <div class="inputs">
+            <h5>비밀번호</h5>
+            <label for="id_input">
+              <input
+                type="password"
+                id="id_input"
+                placeholder="비밀번호를 입력하세요."
+              />
+            </label>
+          </div>
+
+          <div class="inputs">
+            <h5>비밀번호 확인</h5>
+            <label for="password_input">
+              <input
+                type="password"
+                id="password_input"
+                placeholder="비밀번호를 입력하세요."
+              />
+            </label>
+          </div>
+
+          <div class="inputs">
+            <h5>이메일</h5>
+            <label for="password_check_input">
+              <input
+                type="text"
+                id="password_check_input"
+                placeholder="이메일."
+              />
+              @
+              <label class="email" for="email_address"></label>
+              <select name="email" id="email_address">
+                <option value="google">google.com</option>
+                <option value="naver">naver.com</option>
+                <option value="hanmail">hanmail.net</option>
+                <option value="direct">직접입력</option>
+              </select>
+            </label>
+          </div>
+          <!-- 버튼 추가 -->
+          <div class="inputs">
+            <button type="submit" class="join_btn">회원가입</button>
+          </div>
+          <!-- 버튼추가 끝 -->
+        </form>
+      </div>
+    </div>
+  </body>
+  </html>

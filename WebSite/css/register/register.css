@@ -1,0 +1,75 @@
+  * {
+      margin: 0;
+      padding: 0;
+    }
+  
+    #join {
+      display: none;
+    }
+
+    #join_pop_up {
+      padding: 15px 15px;
+      border-radius: 10px;
+      position: fixed; /* 화면에 고정되도록 설정 */
+      top: 50%; /* 화면 세로 중앙에 위치 */
+      left: 50%; /* 화면 가로 중앙에 위치 */
+      transform: translate(-60%, -60%); /* 중앙 정렬 */
+      z-index: 9999; /* 다른 요소들 위에 나타나도록 설정 */
+      background-color: white;
+  }
+
+  #join + label {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+    background: #eeeeee;
+    border: 2px solid gray;
+    padding: 7px 14px;
+    line-height: 36px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .modal{
+    width: 100px;
+  }
+
+  .inputs {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .btn-content{
+    display: flex;
+  }
+
+  .btn-content button{
+    width : 200px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .inputs > h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .inputs > label {
+    display: block;
+    width: 100%;
+    padding: 7px 5px;
+    border: 1px solid #333333;
+    border-radius: 10px;
+  }
+  
+  .inputs > label > input {
+    border: none;
+    padding-left: 15px;
+  }
+  
+  .inputs > label > input:focus {
+    outline: none;
+  }
+  
+  .inputs > label > select {
+    border: none;
+  }

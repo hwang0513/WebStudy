@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹 페이지 만들기 7주차</title>
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/mainbody.css">
+    <link rel="stylesheet" href="../css/home/global.css">
+    <link rel="stylesheet" href="../css/home/footer.css">
+    <link rel="stylesheet" href="../css/home/header.css">
+    <link rel="stylesheet" href="../css/home/mainbody.css">
+    <link rel="stylesheet" href="../css/register/register.css">
 </head>
 
 <!-- 1. 전체 영역은 container 
@@ -17,6 +18,75 @@
      5. 푸터 
 -->
 <body>
+    <div class="modal" style="display: none;">
+        <div id="join_pop_up">
+          <h2>회원가입</h2>
+          <!-- form -->
+          <form action="">
+            <div class="inputs">
+              <h5>아이디</h5>
+              <label for="id_input">
+                <input
+                  type="text"
+                  id="id_input"
+                  placeholder="아이디를 입력하세요."
+                />
+              </label>
+            </div>
+  
+            <div class="inputs">
+              <h5>비밀번호</h5>
+              <label for="id_input">
+                <input
+                  type="password"
+                  id="id_input"
+                  placeholder="비밀번호를 입력하세요."
+                />
+              </label>
+            </div>
+  
+            <div class="inputs">
+              <h5>비밀번호 확인</h5>
+              <label for="password_input">
+                <input
+                  type="password"
+                  id="password_input"
+                  placeholder="비밀번호를 입력하세요."
+                />
+              </label>
+            </div>
+  
+            <div class="inputs">
+              <h5>이메일</h5>
+              <label for="password_check_input">
+                <input
+                  type="text"
+                  id="password_check_input"
+                  placeholder="이메일."
+                />
+                @
+                <label class="email" for="email_address"></label>
+                <select name="email" id="email_address">
+                  <option value="google">google.com</option>
+                  <option value="naver">naver.com</option>
+                  <option value="hanmail">hanmail.net</option>
+                  <option value="direct">직접입력</option>
+                </select>
+              </label>
+            </div>
+            <!-- 버튼 추가 -->
+            <div class="inputs">
+              <div class="btn-content">
+                <button type="submit" class="join_btn">회원가입</button>
+                <button class="quit_join">닫기</button>
+              </div>
+            </div>
+            <!-- 버튼추가 끝 -->
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!-- 전체영역 -->
     <div class="container">
 
@@ -30,55 +100,59 @@
             <!-- 메뉴 -->
             <nav>
                 <ul class="list-wrap">
-                    <li><a href="#">1번 메뉴</a>
+                    <li><a href="">1번 메뉴</a>
                         <ul class="dropdown">
-                            <li>1-1</li>
-                            <li>1-2</li>
-                            <li>1-3</li>
+                            <li><a href="menu.html">1-1</a></li>
+                            <li><a href="menu.html">1-2</a></li>
+                            <li><a href="menu.html">1-3</a></li>
                         </ul>
                     </li>               
 
-                    <li><a href="#">2번 메뉴</a>
+                    <li><a href="">2번 메뉴</a>
                         <ul class="dropdown">
-                            <li>2-1</li>
-                            <li>2-2</li>
-                            <li>2-3</li>
+                            <li><a href="menu.html">2-1</a></li>
+                            <li><a href="menu.html">2-2</a></li>
+                            <li><a href="menu.html">2-3</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="#">3번 메뉴</a>
+                    <li><a href="">3번 메뉴</a>
                         <ul class="dropdown">
-                            <li>3-1</li>
-                            <li>3-2</li>
-                            <li>3-3</li>
+                            <li><a href="menu.html">3-1</a></li>
+                            <li><a href="menu.html">3-2</a></li>
+                            <li><a href="menu.html">3-3</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="#">4번 메뉴</a>
+                    <li><a href="">4번 메뉴</a>
                         <ul class="dropdown">
-                            <li>4-1</li>
-                            <li>4-2</li>
-                            <li>4-3</li>
+                            <li><a href="menu.html">4-1</a></li>
+                            <li><a href="menu.html">4-2</a></li>
+                            <li><a href="menu.html">4-3</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="#">5번 메뉴</a>
+                    <li><a href="">5번 메뉴</a>
                         <ul class="dropdown">
-                            <li>5-1</li>
-                            <li>5-2</li>
-                            <li>5-3</li>
+                            <li><a href="menu.html">5-1</a></li>
+                            <li><a href="menu.html">5-2</a></li>
+                            <li><a href="menu.html">5-3</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="#">6번 메뉴</a>
+                    <li><a href="">6번 메뉴</a>
                         <ul class="dropdown">
-                            <li>6-1</li>
-                            <li>6-2</li>
-                            <li>6-3</li>
+                            <li><a href="menu.html">6-1</a></li>
+                            <li><a href="menu.html">6-2</a></li>
+                            <li><a href="menu.html">6-3</a></li>
                         </ul>
                     </li>
                 </ul>                
             </nav>
+
+            <div class="user-info">
+                <button class="btn-register">회원가입</button>
+            </div>
         </header>
 
         <!-- (2) 본문 -->
@@ -91,7 +165,7 @@
                     <img src="../img/slider/photo-3.jpg" alt="">
 
                     <button class="prev-btn">&lang;</button>
-                    <button class="next-btn">&lang;</button>
+                    <button class="next-btn" style="direction: rtl">&lang;</button>
                 </div>
             </div>
 
@@ -106,37 +180,36 @@
                 <!-- 공지사항 탭 1 -->
                 <div class="content-box content01">
                     <ul>
-                        <li><a link="" href="#">반갑습니다. 공지사항글입니다.</a></li>
-                        <li><a link="" href="#">안녕하세요 환영합니다.</a></li>
-                        <li><a link="" href="#">반갑습니다 반갑습니다.</a></li>
-                        <li><a link="" href="#">반갑습니다. 공지사항글입니다.</a></li>
-                        <li><a link="" href="#">안녕하세요 환영합니다.</a></li>
-                        <li><a link="" href="#">반갑습니다 반갑습니다.</a></li>
+                        <li><a link="" href="../html/notice.html">반갑습니다. 공지사항글입니다.</a></li>
+                        <li><a link="" href="../html/notice.html">안녕하세요 환영합니다.</a></li>
+                        <li><a link="" href="../html/notice.html">반갑습니다 반갑습니다.</a></li>
+                        <li><a link="" href="../html/notice.html">반갑습니다. 공지사항글입니다.</a></li>
+                        <li><a link="" href="../html/notice.html">안녕하세요 환영합니다.</a></li>
+                        <li><a link="" href="../html/notice.html">반갑습니다 반갑습니다.</a></li>
                     </ul>
                 </div>
 
                 <!-- 공지사항 탭 2 -->
                 <div class="content-box content02">
                     <ul>
-                        <li><a link="" href="#">자유게시판입니다.</a></li>
-                        <li><a link="" href="#">모두 안녕하세요.</a></li>
-                        <li><a link="" href="#">반갑습니다</a></li>
-                        <li><a link="" href="#">자유게시판입니다.</a></li>
-                        <li><a link="" href="#">모두 안녕하세요.</a></li>
-                        <li><a link="" href="#">반갑습니다</a></li>
-                        
+                        <li><a link="" href="../html/notice.html">자유게시판입니다.</a></li>
+                        <li><a link="" href="../html/notice.html">모두 안녕하세요.</a></li>
+                        <li><a link="" href="../html/notice.html">반갑습니다</a></li>
+                        <li><a link="" href="../html/notice.html">자유게시판입니다.</a></li>
+                        <li><a link="" href="../html/notice.html">모두 안녕하세요.</a></li>
+                        <li><a link="" href="../html/notice.html">반갑습니다</a></li>
                     </ul>
                 </div>
 
                 <!-- 공지사항 탭 3 -->
                 <div class="content-box content03">
                     <ul>
-                        <li><a link="" href="#">반갑습니다. 고객센터입니다.</a></li>
-                        <li><a link="" href="#">문의사항안내.</a></li>
-                        <li><a link="" href="#">반갑습니다 고객센터입니다.</a></li>
-                        <li><a link="" href="#">반갑습니다. 고객센터입니다.</a></li>
-                        <li><a link="" href="#">문의사항안내.</a></li>
-                        <li><a link="" href="#">반갑습니다 고객센터입니다.</a></li>
+                        <li><a link="" href="../html/notice.html">반갑습니다. 고객센터입니다.</a></li>
+                        <li><a link="" href="../html/notice.html">문의사항안내.</a></li>
+                        <li><a link="" href="../html/notice.html">반갑습니다 고객센터입니다.</a></li>
+                        <li><a link="" href="../html/notice.html">반갑습니다. 고객센터입니다.</a></li>
+                        <li><a link="" href="../html/notice.html">문의사항안내.</a></li>
+                        <li><a link="" href="../html/notice.html">반갑습니다 고객센터입니다.</a></li>
                     </ul>
                 </div>
             </div>
@@ -170,10 +243,10 @@
         <footer>
             <div class="bottomMenu">
                 <ul>
-                    <li><a href="#">회사 소개</a></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">여행약관</a></li>
-                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="footer.html">회사 소개</a></li>
+                    <li><a href="footer.html">개인정보처리방침</a></li>
+                    <li><a href="footer.html">여행약관</a></li>
+                    <li><a href="footer.html">사이트맵</a></li>
                 </ul>
             </div>
         </footer>
@@ -181,5 +254,8 @@
 
 <!-- 자바스크립트 연결 -->
 <script src="../js/slide.js"></script>
+<script src="../js/imgclick.js"></script>
+<script src="../js/modal.js"></script>
+<script src="../js/menu.js"></script>
 </body>
 </html>
